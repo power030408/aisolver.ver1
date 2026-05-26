@@ -1,0 +1,24 @@
+# Ignore everything by default so only AISolver files are uploaded.
+/*
+
+!.gitignore
+!README.md
+!requirements.txt
+!ai_solver.py
+!ai_solver_utils.py
+!build_ai_solver.ps1
+!build_ai_solver_mac.sh
+!assets/
+!assets/ai_solver_icon_v1.ico
+!assets/ai_solver_icon_v1.png
+
+# Local/generated files
+AISolver.spec
+build/
+dist/
+__pycache__/
+*.pyc
+*.db
+*.log
+.env
+vendor/
