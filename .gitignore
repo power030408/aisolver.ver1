@@ -11,6 +11,10 @@
 !assets/
 !assets/ai_solver_icon_v1.ico
 !assets/ai_solver_icon_v1.png
+!assets/download.png
+!assets/사용자 첨부 파일.png
+!assets/사용자 첨부 파일1.png
+!assets/사용자 첨부 파일3.png
 
 # Local/generated files
 AISolver.spec

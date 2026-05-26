@@ -2,6 +2,20 @@
 
 수동 스크린샷 없이 화면을 직접 캡처해 문제를 자동 인식하고, OCR과 AI로 단계별 풀이를 제공하는 데스크톱 문제 해결 도우미입니다.
 
+## Screenshots
+
+### Main Dashboard
+
+![Main dashboard](assets/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%B2%A8%EB%B6%80%20%ED%8C%8C%EC%9D%BC1.png)
+
+### Region Selection
+
+![Region selection](assets/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%B2%A8%EB%B6%80%20%ED%8C%8C%EC%9D%BC3.png)
+
+### AI Result
+
+![AI result](assets/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%B2%A8%EB%B6%80%20%ED%8C%8C%EC%9D%BC.png)
+
 ## Features
 
 - Direct screen capture without saving screenshots manually
