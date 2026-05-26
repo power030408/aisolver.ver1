@@ -61,6 +61,10 @@ TESSERACT_LANGS    = 'kor+eng'
 CHUNK_MAX_CHARS    = 1200
 CHUNK_MIN_CHARS    = 300
 RETRIEVE_TOP_K     = 6
+APP_START_WIDTH    = 1120
+APP_START_HEIGHT   = 760
+APP_MIN_WIDTH      = 1040
+APP_MIN_HEIGHT     = 700
 
 # ═══ DESIGN TOKENS ════════════════════════════════════════════════════════════
 # Surfaces
@@ -336,8 +340,7 @@ class AISolverApp:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("NEURAL_SOLVER")
-        self.root.geometry("920x680")
-        self.root.minsize(860, 600)
+        self._set_initial_window_size()
         self.root.configure(bg=BG)
         self.root.resizable(True, True)
         self.root.protocol('WM_DELETE_WINDOW', self._on_close)
@@ -381,6 +384,16 @@ class AISolverApp:
         self._build_ui()
         self._load_settings()
         self.root.mainloop()
+
+    def _set_initial_window_size(self):
+        screen_w = self.root.winfo_screenwidth()
+        screen_h = self.root.winfo_screenheight()
+        width = min(APP_START_WIDTH, max(APP_MIN_WIDTH, screen_w - 80))
+        height = min(APP_START_HEIGHT, max(APP_MIN_HEIGHT, screen_h - 100))
+        x = max(0, (screen_w - width) // 2)
+        y = max(0, (screen_h - height) // 2)
+        self.root.geometry(f"{width}x{height}+{x}+{y}")
+        self.root.minsize(min(APP_MIN_WIDTH, width), min(APP_MIN_HEIGHT, height))
 
     def _on_close(self):
         self._closing = True
